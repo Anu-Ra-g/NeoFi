@@ -5,6 +5,8 @@ This is a REST API resembling a movie database same as IMDb. The data about user
 
 The API is hosted using the free service on Render, which means it'll go down due to inactivity until unless brought backup. It's best to start the server and test this API locally using Postman or cURL.
 
+If the hosted service is online, you can start using it like `https://neofi-y8ef.onrender.com/auth/signup` and same goes for rest of the endpoints.
+
 **Packages used for this project**
 - Flask
 - Flask-RESTx
@@ -27,9 +29,9 @@ The API is hosted using the free service on Render, which means it'll go down du
 ## To run the code
 
 1. Clone the repo <br>
-    `git clone https://github.com/Anu-Ra-g/beyondcc.git` <br>
+    `git clone https://github.com/Anu-Ra-g/NeoFi.git` <br>
 2. Change the app directory <br>
-    `cd beyondcc` 
+    `cd NeoFi` 
 3. Activate the virtual environment <br>
     `venv\Scripts\activate (Windows)` <br>
 4. Install the dependencies<br>
@@ -37,7 +39,7 @@ The API is hosted using the free service on Render, which means it'll go down du
 4. Run the command <br>
     `python runserver.py`
 
-P.S :- I lack in experience in testing out the endpoints automatically. Hence, I couldn't create a system for automated testing. I'd like you to consider for me for a internship role if my application do not suffice for a full-time role at your company. Thank You
+P.S :- I've made the API using Flask but if the job requires I'm ready to learn Django. I lack in experience in testing out the endpoints automatically. Hence, I couldn't create a system for automated testing. I'd like you to consider for me for a internship role if my application does not suffice for a full-time role at your company. Thank You
 
 
 
