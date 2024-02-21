@@ -16,8 +16,8 @@ The API is hosted using the free service on Render, which means it'll go down du
 
 ## API endpoints
 
-- `POST /signup`  
-- `POST /login`  
+- `POST /auth/signup`  
+- `POST /auth/login`  
 - `POST /notes/create` 🔒
 - `GET /notes/{id}` 🔒 
 - `POST /notes/share` 🔒 
