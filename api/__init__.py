@@ -36,14 +36,14 @@ def create_app(config=config_dict['dev']):
 
 
     api = Api(app,
-            title="Movies API",
-            description="A REST API for a movies database",
+            title="Notes API",
+            description="A REST API for a notes database",
             authorizations=authorizations,
             security="Bearer Auth"
     )
 
     api.add_namespace(notes_namespace, path='/notes')
-    api.add_namespace(auth_namespace, path='/')
+    api.add_namespace(auth_namespace, path='')
 
     @api.errorhandler(NotFound)
     def not_found(error):
@@ -58,10 +58,5 @@ def create_app(config=config_dict['dev']):
             "error": "Method Not allowed",
             "message": "Not allowed"
             }, 405
-    
-    @api.route('/<path:invalid_path>')
-    class CatchAll(Resource):
-        def get(self, invalid_path):
-            return {"error": "Not Found", "message": f"No endpoint matched for {invalid_path}"}, 404
         
     return app
